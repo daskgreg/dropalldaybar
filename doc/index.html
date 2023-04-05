@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Kaffen - Cafe & Restaurant HTML5 Template</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="assets/style.css">
+	<link rel="stylesheet" href="assets/table.css">
+</head>
+<body>
+	<header class="dt-header dt-header_blue">
+		<span class="dt-logo">Kaffen - Cafe & Restaurant HTML5 Template</span>
+	</header>
+	<div class="dt-container dt-container_flex">
+		<aside class="dt-navbar">
+			<nav class="dt-navbar__nav">
+				<div class="dt-navbar__section">
+					<ul class="dt-navbar__list">
+						<li><a href="#files_structure" class="dt-navbar__link">File structure</a></li>
+						<li>
+							<a href="#settings" class="dt-navbar__link">Settings</a>
+							<ul class="dt-navbar__list">
+								<li><a href="#include_fonts" class="dt-navbar__link dt-navbar__link_nested">Include Fonts</a></li>
+								<li><a href="#include_icons" class="dt-navbar__link dt-navbar__link_nested">Edit Icons</a></li>
+							</ul>
+						</li>
+						<li><a href="#conts" class="dt-navbar__link">Contact Form PHP</a></li>
+						<li>
+							<a href="#html_structure" class="dt-navbar__link">HTML structure</a>
+							<ul class="dt-navbar__list">
+								<li><a href="#html_structure_header" class="dt-navbar__link dt-navbar__link_nested">"Header" Section</a></li>
+								<li><a href="#html_structure_footer" class="dt-navbar__link dt-navbar__link_nested">"Footer" Section</a></li>
+								<li><a href="#html_structure_home" class="dt-navbar__link dt-navbar__link_nested">"Home" Page</a></li>
+								<li><a href="#html_structure_inner" class="dt-navbar__link dt-navbar__link_nested">"Inner" Pages</a></li>
+							</ul>
+						</li>
+						<li><a href="#icons" class="dt-navbar__link">Icons</a></li>
+						<li><a href="#credits" class="dt-navbar__link">Credits</a></li>
+					</ul>
+				</div>
+			</nav>
+		</aside>
+		<div class="dt-content dt-content_scroll-bar-yes">
+			<div class="dt-section">
+				<h2 class="dt-title">Kaffen - Cafe & Restaurant HTML5 Template</h2>
+				<p>by: bslthemes</p>
+				<p>Thank you for your purchase. If you have any questions, mail me to - <a href="mailto:beshleyua@gmail.com">beshleyua@gmail.com</a></p>
+			</div>
+			<article id="files_structure" class="dt-section">
+				<h2 class="dt-title">File structure</h2>
+				<p>After unpacking archive, you'll see this structure:</p>
+				<div class="dt-info-block">
+					<pre class="code language-html">
+						<code>
+html/
+│
+├──doc/
+├──template/
+│──│──assets/
+│──│──│──images/
+│──│──fonts/
+│──│──images/
+│──│──js/
+│──│──│──bootstrap.js
+│──│──│──common.js
+│──│──│──imagesloaded.pkgd.js
+│──│──│──isotope.pkgd.js
+│──│──│──jquery.paroller.min.js
+│──│──│──jquery.min.js
+│──│──│──jquery.scrolla.js
+│──│──│──jquery.validate.min.js
+│──│──│──magnific-popup.js
+│──│──│──parallax.js
+│──│──│──skrollr.js
+│──│──│──splitting.js
+│──│──│──swiper.js
+│──│──mailer/
+│──│──│──feedback.php
+│──│──│──feedback_r.php
+│──│──│──form_setting.php
+│──│──scss/
+│──│──styles/
+│──│──│──animate.css
+│──│──│──bootstrap.css
+│──│──│──magnific-popup.css
+│──│──│──splitting.css
+│──│──│──swiper.css
+│──│──style.css
+│──│──index.html
+│──│──index-2.html
+│──│──about.html
+│──│──menu-coffee.html
+│──│──menu-restaurant.html
+│──│──reservation.html
+│──│──services.html
+│──│──faq.html
+│──│──team.html
+│──│──history.html
+│──│──gallery.html
+│──│──contacts.html
+│──│──blog.html
+│──│──blog-grid.html
+│──│──blog-single.html
+						</code>
+					</pre>
+				</div>
+				<ul class="dt-list dt-list_nested dt-info-block">
+					<li>
+						<span class="dt-label dt-label_bold">styles/</span> - plugins styles for template
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">scss/</span> - main .scss styles for template
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">style.css</span> - main CSS styles for template
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">js/</span> - all JS library for template
+						<ul class="dt-list dt-list_nested">
+							<li><span class="dt-label dt-label_bold">common.js</span> - main JS for template</li>
+						</ul>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">mailer/</span> - PHP forms and mail settings for template
+						<ul class="dt-list dt-list_nested">
+							<li><span class="dt-label dt-label_bold">form_setting.php</span> - email settings for forms</li>
+							<li><span class="dt-label dt-label_bold">feedback.php</span> - contact form settings</li>
+							<li><span class="dt-label dt-label_bold">feedback_r.php</span> - reservation form settings</li>
+						</ul>
+					</li>
+				</ul>
+			</article>
+			<article id="settings" class="dt-section">
+				<h2 class="dt-title">Settings</h2>
+			</article>
+			<article id="include_fonts" class="dt-section">
+				<h2 class="dt-title">Include of fonts</h2>
+				<p>To use fonts, you must add one tag 'link' from section below to head section.</p>
+				<pre class="code language-html">
+					<code>
+&lt;link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto" type="text/css" media="all" /&gt;
+					</code>
+				</pre>
+				<p>
+					Next step is to replace "font-family: '...';" to your fonts names.
+				</p>
+			</article>
+			<article id="include_icons" class="dt-section">
+				<h2 class="dt-title">Edit Icons</h2>
+				<p>In this template are defined some of classes for icons, see all icons here - <a href="https://fontawesome.com/icons?d=gallery&s=brands,solid&m=free">https://fontawesome.com/icons?d=gallery&s=brands,solid&m=free</a>, use search and select icons.</p>
+				<p>Copy icon class (for example "fas fa-code") and add to tag in html file like this:</p>
+				<pre class="code language-html">
+					<code>
+&lt;i class="fas fa-pencil-ruler"&gt;&lt;/i&gt;
+					</code>
+				</pre>
+			</article>
+			<article id="conts" class="dt-section">
+				<h2 class="dt-title">Contact Form PHP</h2>
+				<p>To modify the form is submitted, you can use the following settings, folders "/mailer/form_setting.php" and "/mailer/feedback.php"</p>
+			</article>
+			<article id="html_structure" class="dt-section">
+				<h2 class="dt-title">HTML structure</h2>
+				<pre class="code language-html">
+					<code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en" xmlns="http://www.w3.org/1999/xhtml"&gt;
+&lt;head&gt;
+	&lt;title&gt;Kaffen - Cafe & Restaurant HTML Template&lt;/title&gt;
+	&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt;
+	&lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+	&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+	&lt;meta name="HandheldFriendly" content="true"&gt;
+
+	&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;
+	&lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;
+	&lt;link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet"&gt;
+
+	&lt;!-- BEGIN CSS STYLES --&gt;
+	&lt;link rel="stylesheet" href="styles/bootstrap.css" type="text/css" media="all" /&gt;
+	&lt;link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.css" type="text/css" media="all" /&gt;
+	&lt;link rel="stylesheet" href="fonts/font-awesome/css/line-awesome.css" type="text/css" media="all" /&gt;
+	&lt;link rel="stylesheet" href="styles/animate.css" type="text/css" media="all" /&gt;
+	&lt;link rel="stylesheet" href="styles/magnific-popup.css" type="text/css" media="all" /&gt;
+	&lt;link rel="stylesheet" href="styles/splitting.css" type="text/css" media="all" /&gt;
+	&lt;link rel="stylesheet" href="styles/swiper.css" type="text/css" media="all" /&gt;
+	&lt;link rel="stylesheet" href="style.css" type="text/css" media="all" /&gt;
+	&lt;!-- END CSS STYLES --&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+	&lt;div class="bg"&gt;
+
+		&lt;!-- Preloader --&gt;
+		&lt;div class="preloader"&gt;
+			&lt;div class="centrize full-width"&gt;
+				&lt;div class="vertical-center"&gt;
+					&lt;div class="spinner-logo"&gt;
+						&lt;img src="images/logo.png" alt="" /&gt;
+						&lt;div class="spinner-dot"&gt;
+							&lt;div class="spinner-line"&gt;&lt;/div&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+
+		&lt;!-- Header --&gt;
+		&lt;header class="kf-header"&gt;
+
+			...
+
+		&lt;/header&gt;
+
+		&lt;!-- Wrapper --&gt;
+		&lt;div class="wrapper"&gt;
+
+			...
+
+		&lt;/div&gt;
+
+		&lt;!-- Footer --&gt;
+	  &lt;div class="kf-footer"&gt;
+
+	  	...
+
+	  &lt;/div&gt;
+
+	&lt;/div&gt;
+
+	&lt;!-- Scripts --&gt;
+	&lt;script src="js/jquery.min.js"&gt;&lt;/script&gt;
+	&lt;script src="js/jquery.validate.min.js"&gt;&lt;/script&gt;
+	&lt;script src="js/bootstrap.js"&gt;&lt;/script&gt;
+	&lt;script src="js/swiper.js"&gt;&lt;/script&gt;
+	&lt;script src="js/splitting.js"&gt;&lt;/script&gt;
+	&lt;script src="js/jquery.paroller.min.js"&gt;&lt;/script&gt;
+	&lt;script src="js/parallax.js"&gt;&lt;/script&gt;
+	&lt;script src="js/magnific-popup.js"&gt;&lt;/script&gt;
+	&lt;script src="js/imagesloaded.pkgd.js"&gt;&lt;/script&gt;
+	&lt;script src="js/isotope.pkgd.js"&gt;&lt;/script&gt;
+	&lt;script src="js/jquery.scrolla.js"&gt;&lt;/script&gt;
+	&lt;script src="js/skrollr.js"&gt;&lt;/script&gt;
+	&lt;script src="js/common.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+					</code>
+				</pre>
+			</article>
+			<article id="html_structure_header" class="dt-section">
+				<h2 class="dt-title">HTML structure of "Header"</h2>
+				<pre class="code language-html">
+					<code>
+&lt;!-- Header --&gt;
+&lt;header class="kf-header"&gt;
+
+	&lt;!-- topline --&gt;
+	&lt;div class="kf-topline"&gt;
+		&lt;div class="row"&gt;
+			&lt;div class="col-xs-12 col-sm-6 col-md-4 col-lg-4"&gt;
+
+				&lt;!-- hours --&gt;
+				&lt;div class="kf-h-group"&gt;
+					&lt;i class="far fa-clock"&gt;&lt;/i&gt;
+					&lt;em&gt;opening hours :&lt;/em&gt; 08:00 am - 09:00 pm
+				&lt;/div&gt;
+
+			&lt;/div&gt;
+			&lt;div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 align-center"&gt;
+
+				&lt;!-- social --&gt;
+				&lt;div class="kf-h-social"&gt;
+					&lt;a href="facebook.com" target="blank"&gt;&lt;i class="fab fa-facebook-f"&gt;&lt;/i&gt;&lt;/a&gt;
+					&lt;a href="twitter.com" target="blank"&gt;&lt;i class="fab fa-twitter"&gt;&lt;/i&gt;&lt;/a&gt;
+					&lt;a href="instagram.com" target="blank"&gt;&lt;i class="fab fa-instagram"&gt;&lt;/i&gt;&lt;/a&gt;
+					&lt;a href="youtube.com" target="blank"&gt;&lt;i class="fab fa-youtube"&gt;&lt;/i&gt;&lt;/a&gt;
+				&lt;/div&gt;
+
+			&lt;/div&gt;
+			&lt;div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 align-right"&gt;
+
+				&lt;!-- location --&gt;
+				&lt;div class="kf-h-group"&gt;
+					&lt;i class="fas fa-map-marker-alt"&gt;&lt;/i&gt;
+					&lt;em&gt;Location :&lt;/em&gt; 55 main street, new york
+				&lt;/div&gt;
+
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;!-- navbar --&gt;
+	&lt;div class="kf-navbar"&gt;
+		&lt;div class="row"&gt;
+			&lt;div class="col-xs-12 col-sm-6 col-md-3 col-lg-3"&gt;
+
+				&lt;!-- logo --&gt;
+				&lt;div class="kf-logo"&gt;
+					&lt;a href="index.html"&gt;&lt;img src="images/logo.png" alt="" /&gt;&lt;/a&gt;
+				&lt;/div&gt;
+
+			&lt;/div&gt;
+			&lt;div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 align-center"&gt;
+
+				&lt;!-- main menu --&gt;
+				&lt;div class="kf-main-menu"&gt;
+					&lt;ul&gt;
+						&lt;li&gt;
+							&lt;a href="index.html"&gt;Home&lt;i class="las la-angle-down"&gt;&lt;/i&gt;&lt;/a&gt;
+							&lt;ul&gt;
+								&lt;li&gt;&lt;a href="index.html"&gt;Coffee House&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href="index-2.html"&gt;Restaurant&lt;/a&gt;&lt;/li&gt;
+							&lt;/ul&gt;
+						&lt;/li&gt;
+						&lt;li&gt;&lt;a href="about.html"&gt;About&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;
+							&lt;a href="menu-coffee.html"&gt;Menu&lt;i class="las la-angle-down"&gt;&lt;/i&gt;&lt;/a&gt;
+							&lt;ul&gt;
+								&lt;li&gt;&lt;a href="menu-coffee.html"&gt;Menu Coffee&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href="menu-restaurant.html"&gt;Menu Restaurant&lt;/a&gt;&lt;/li&gt;
+							&lt;/ul&gt;
+						&lt;/li&gt;
+						&lt;li&gt;
+							&lt;a href="#"&gt;Pages&lt;i class="las la-angle-down"&gt;&lt;/i&gt;&lt;/a&gt;
+							&lt;ul&gt;
+								&lt;li&gt;&lt;a href="services.html"&gt;Service&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href="reservation.html"&gt;Reservation&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href="history.html"&gt;History&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href="team.html"&gt;Our Chefs&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href="gallery.html"&gt;Gallery&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href="faq.html"&gt;FAQ&lt;/a&gt;&lt;/li&gt;
+							&lt;/ul&gt;
+						&lt;/li&gt;
+						&lt;li&gt;
+							&lt;a href="#"&gt;Blog&lt;i class="las la-angle-down"&gt;&lt;/i&gt;&lt;/a&gt;
+							&lt;ul&gt;
+								&lt;li&gt;&lt;a href="blog-grid.html"&gt;Blog Grid&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href="blog.html"&gt;Blog Standard&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href="blog-single.html"&gt;Blog Single&lt;/a&gt;&lt;/li&gt;
+							&lt;/ul&gt;
+						&lt;/li&gt;
+						&lt;li&gt;&lt;a href="contacts.html"&gt;Contacts&lt;/a&gt;&lt;/li&gt;
+					&lt;/ul&gt;
+				&lt;/div&gt;
+
+			&lt;/div&gt;
+			&lt;div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 align-right"&gt;
+
+				&lt;!-- menu btn --&gt;
+				&lt;a href="#" class="kf-menu-btn"&gt;&lt;span&gt;&lt;/span&gt;&lt;/a&gt;
+
+				&lt;!-- btn --&gt;
+				&lt;a href="reservation.html" class="kf-btn h-btn"&gt;
+					&lt;span&gt;Book a table&lt;/span&gt;
+					&lt;i class="fas fa-chevron-right"&gt;&lt;/i&gt;
+				&lt;/a&gt;
+
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;!-- mobile navbar --&gt;
+	&lt;div class="kf-navbar-mobile"&gt;
+
+		&lt;!-- mobile menu --&gt;
+		&lt;div class="kf-main-menu"&gt;
+			&lt;ul&gt;
+				&lt;li class="has-children"&gt;
+					&lt;a href="index.html"&gt;Home&lt;/a&gt;
+					&lt;i class="las la-angle-down"&gt;&lt;/i&gt;
+					&lt;ul&gt;
+						&lt;li&gt;&lt;a href="index.html"&gt;Coffee House&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href="index-2.html"&gt;Restaurant&lt;/a&gt;&lt;/li&gt;
+					&lt;/ul&gt;
+				&lt;/li&gt;
+				&lt;li&gt;&lt;a href="about.html"&gt;About&lt;/a&gt;&lt;/li&gt;
+				&lt;li class="has-children"&gt;
+					&lt;a href="menu-coffee.html"&gt;Menu&lt;/a&gt;
+					&lt;i class="las la-angle-down"&gt;&lt;/i&gt;
+					&lt;ul&gt;
+						&lt;li&gt;&lt;a href="menu-coffee.html"&gt;Menu Coffee&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href="menu-restaurant.html"&gt;Menu Restaurant&lt;/a&gt;&lt;/li&gt;
+					&lt;/ul&gt;
+				&lt;/li&gt;
+				&lt;li class="has-children"&gt;
+					&lt;a href="#"&gt;Pages&lt;/a&gt;
+					&lt;i class="las la-angle-down"&gt;&lt;/i&gt;
+					&lt;ul&gt;
+						&lt;li&gt;&lt;a href="services.html"&gt;Service&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href="reservation.html"&gt;Reservation&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href="history.html"&gt;History&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href="team.html"&gt;Our Chefs&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href="gallery.html"&gt;Gallery&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href="faq.html"&gt;FAQ&lt;/a&gt;&lt;/li&gt;
+					&lt;/ul&gt;
+				&lt;/li&gt;
+				&lt;li class="has-children"&gt;
+					&lt;a href="#"&gt;Blog&lt;/a&gt;
+					&lt;i class="las la-angle-down"&gt;&lt;/i&gt;
+					&lt;ul&gt;
+						&lt;li&gt;&lt;a href="blog-grid.html"&gt;Blog Grid&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href="blog.html"&gt;Blog Standard&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href="blog-single.html"&gt;Blog Single&lt;/a&gt;&lt;/li&gt;
+					&lt;/ul&gt;
+				&lt;/li&gt;
+				&lt;li&gt;&lt;a href="contacts.html"&gt;Contacts&lt;/a&gt;&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/div&gt;
+
+		&lt;!-- mobile topline --&gt;
+		&lt;div class="kf-topline"&gt;
+			&lt;div class="row"&gt;
+				&lt;div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"&gt;
+
+					&lt;!-- mobile btn --&gt;
+					&lt;a href="reservation.html" class="kf-btn h-btn"&gt;
+						&lt;span&gt;Book a table&lt;/span&gt;
+						&lt;i class="fas fa-chevron-right"&gt;&lt;/i&gt;
+					&lt;/a&gt;
+
+				&lt;/div&gt;
+				&lt;div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"&gt;
+
+					&lt;!-- social --&gt;
+					&lt;div class="kf-h-social"&gt;
+						&lt;a href="facebook.com" target="blank"&gt;&lt;i class="fab fa-facebook-f"&gt;&lt;/i&gt;&lt;/a&gt;
+						&lt;a href="twitter.com" target="blank"&gt;&lt;i class="fab fa-twitter"&gt;&lt;/i&gt;&lt;/a&gt;
+						&lt;a href="instagram.com" target="blank"&gt;&lt;i class="fab fa-instagram"&gt;&lt;/i&gt;&lt;/a&gt;
+						&lt;a href="youtube.com" target="blank"&gt;&lt;i class="fab fa-youtube"&gt;&lt;/i&gt;&lt;/a&gt;
+					&lt;/div&gt;
+
+				&lt;/div&gt;
+				&lt;div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"&gt;
+
+					&lt;!-- hours --&gt;
+					&lt;div class="kf-h-group"&gt;
+						&lt;i class="far fa-clock"&gt;&lt;/i&gt;
+						&lt;em&gt;opening hours :&lt;/em&gt; 08:00 am - 09:00 pm
+					&lt;/div&gt;
+
+				&lt;/div&gt;
+				&lt;div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"&gt;
+
+					&lt;!-- location --&gt;
+					&lt;div class="kf-h-group"&gt;
+						&lt;i class="fas fa-map-marker-alt"&gt;&lt;/i&gt;
+						&lt;em&gt;Location :&lt;/em&gt; 55 main street, new york
+					&lt;/div&gt;
+
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+
+	&lt;/div&gt;
+
+&lt;/header&gt;
+					</code>
+				</pre>
+			</article>
+			<article id="html_structure_footer" class="dt-section">
+				<h2 class="dt-title">HTML structure of "Footer"</h2>
+				<pre class="code language-html">
+					<code>
+&lt;!-- Footer --&gt;
+&lt;div class="kf-footer"&gt;
+	&lt;div class="container"&gt;
+		&lt;div class="row"&gt;
+			&lt;div class="col-xs-12 col-sm-12 col-md-6 col-lg-3"&gt;
+
+				&lt;!-- logo --&gt;
+				&lt;div class="kf-logo element-anim-1 scroll-animate" data-animate="active"&gt;
+					&lt;a href="index.html"&gt;&lt;img src="images/logo.png" alt="" /&gt;&lt;/a&gt;
+				&lt;/div&gt;
+
+			&lt;/div&gt;
+			&lt;div class="col-xs-12 col-sm-12 col-md-6 col-lg-3"&gt;
+
+				&lt;!-- hours --&gt;
+				&lt;div class="kf-f-hours element-anim-1 scroll-animate" data-animate="active"&gt;
+					&lt;h5&gt;Working Hours&lt;/h5&gt;
+					&lt;ul&gt;
+						&lt;li&gt;
+							Sunday - Thursday
+							&lt;em&gt;08:00 am - 09:00pm&lt;/em&gt;
+						&lt;/li&gt;
+						&lt;li&gt;
+							Only Friday
+							&lt;em&gt;03:00 pm - 09:00pm&lt;/em&gt;
+						&lt;/li&gt;
+						&lt;li&gt;
+							&lt;strong&gt;Saturday Close&lt;/strong&gt;
+						&lt;/li&gt;
+					&lt;/ul&gt;
+				&lt;/div&gt;
+
+			&lt;/div&gt;
+			&lt;div class="col-xs-12 col-sm-12 col-md-6 col-lg-3"&gt;
+
+				&lt;!-- contact --&gt;
+				&lt;div class="kf-f-contact element-anim-1 scroll-animate" data-animate="active"&gt;
+					&lt;h5&gt;Contact Us&lt;/h5&gt;
+					&lt;ul&gt;
+						&lt;li&gt;
+							&lt;i class="las la-map-marker"&gt;&lt;/i&gt;
+							&lt;em&gt;Location :&lt;/em&gt;
+							55 Main Street, New York
+						&lt;/li&gt;
+						&lt;li&gt;
+							&lt;i class="las la-envelope-open-text"&gt;&lt;/i&gt;
+							&lt;em&gt;Email Address :&lt;/em&gt;
+							kaffendev@gmail.com
+						&lt;/li&gt;
+						&lt;li&gt;
+							&lt;i class="las la-phone"&gt;&lt;/i&gt;
+							&lt;em&gt;Phone Number :&lt;/em&gt;
+							+012 (345) 678 99
+						&lt;/li&gt;
+					&lt;/ul&gt;
+				&lt;/div&gt;
+
+			&lt;/div&gt;
+			&lt;div class="col-xs-12 col-sm-12 col-md-6 col-lg-3"&gt;
+
+				&lt;!-- gallery --&gt;
+				&lt;div class="kf-f-gallery element-anim-1 scroll-animate" data-animate="active"&gt;
+					&lt;h5&gt;Gallery&lt;/h5&gt;
+					&lt;ul&gt;
+						&lt;li&gt;
+							&lt;a href="images/grid_gal1.jpg" class="kf-image-hover has-popup-image"&gt;&lt;img src="images/grid_gal1.jpg" alt="" /&gt;&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li&gt;
+							&lt;a href="images/grid_gal2.jpg" class="kf-image-hover has-popup-image"&gt;&lt;img src="images/grid_gal2.jpg" alt="" /&gt;&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li&gt;
+							&lt;a href="images/grid_gal3.jpg" class="kf-image-hover has-popup-image"&gt;&lt;img src="images/grid_gal3.jpg" alt="" /&gt;&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li&gt;
+							&lt;a href="images/grid_gal4.jpg" class="kf-image-hover has-popup-image"&gt;&lt;img src="images/grid_gal4.jpg" alt="" /&gt;&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li&gt;
+							&lt;a href="images/grid_gal5.jpg" class="kf-image-hover has-popup-image"&gt;&lt;img src="images/grid_gal5.jpg" alt="" /&gt;&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li&gt;
+							&lt;a href="images/grid_gal6.jpg" class="kf-image-hover has-popup-image"&gt;&lt;img src="images/grid_gal1.jpg" alt="" /&gt;&lt;/a&gt;
+						&lt;/li&gt;
+					&lt;/ul&gt;
+				&lt;/div&gt;
+
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="row"&gt;
+			&lt;div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 align-center"&gt;
+
+				&lt;!-- copyright --&gt;
+				&lt;div class="kf-copyright element-anim-1 scroll-animate" data-animate="active"&gt;
+					Copyright © 2022 Kaffen. All Rights Reserved.
+				&lt;/div&gt;
+
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>
+			</article>
+			<article id="html_structure_home" class="dt-section">
+				<h2 class="dt-title">HTML structure of "Home" pages</h2>
+				<pre class="code language-html">
+					<code>
+		&lt;!-- Wrapper --&gt;
+		&lt;div class="wrapper"&gt;
+
+			&lt;!-- Section Started Slider --&gt;
+			&lt;section class="section kf-started-slider"&gt;
+				&lt;div class="swiper-container"&gt;
+
+					...
+
+				&lt;/div&gt;
+			&lt;/section&gt;
+
+			&lt;!-- Section About --&gt;
+			&lt;section class="section kf-about"&gt;
+				&lt;div class="container"&gt;
+
+					...
+
+				&lt;/div&gt;
+			&lt;/section&gt;
+
+			&lt;!-- Section Services --&gt;
+			&lt;section class="section kf-services"&gt;
+				&lt;div class="container"&gt;
+
+					...
+
+				&lt;/div&gt;
+			&lt;/section&gt;
+
+			&lt;!-- Section Menu --&gt;
+			&lt;section class="section kf-menu kf-parallax" style="background-image: url(images/menu_bg.jpg);"&gt;
+				&lt;div class="container"&gt;
+
+					...
+
+				&lt;/div&gt;
+			&lt;/section&gt;
+
+			&lt;!-- Section Choose --&gt;
+			&lt;section class="section kf-choose"&gt;
+				&lt;div class="container"&gt;
+
+					...
+
+				&lt;/div&gt;
+			&lt;/section&gt;
+
+			&lt;!-- Section Grid Carousel --&gt;
+			&lt;section class="section kf-grid-carousel"&gt;
+				&lt;div class="container"&gt;
+
+					...
+
+				&lt;/div&gt;
+			&lt;/section&gt;
+
+			&lt;!-- Section Testimonials Slider --&gt;
+			&lt;section class="section kf-testimonials kf-parallax" style="background-image: url(images/testimonials_bg.jpg);"&gt;
+				&lt;div class="container"&gt;
+
+					...
+
+				&lt;/div&gt;
+			&lt;/section&gt;
+
+			&lt;!-- Section Numbers --&gt;
+			&lt;section class="section kf-numbers"&gt;
+				&lt;div class="container"&gt;
+
+					...
+
+				&lt;/div&gt;
+			&lt;/section&gt;
+
+			&lt;!-- Section Latest Blog --&gt;
+			&lt;section class="section kf-latest-blog"&gt;
+				&lt;div class="container"&gt;
+
+					...
+
+				&lt;/div&gt;
+			&lt;/section&gt;
+
+			&lt;!-- Section CTA --&gt;
+			&lt;section class="section kf-cta kf-parallax" style="background-image: url(images/cta_bg.jpg);"&gt;
+				&lt;div class="container"&gt;
+
+					...
+
+				&lt;/div&gt;
+			&lt;/section&gt;
+
+		&lt;/div&gt;
+					</code>
+				</pre>
+			</article>
+			<article id="html_structure_inner" class="dt-section">
+				<h2 class="dt-title">HTML structure of "Inner" pages</h2>
+				<pre class="code language-html">
+					<code>
+&lt;!-- Wrapper --&gt;
+&lt;div class="wrapper"&gt;
+
+	&lt;!-- Section Started Inner --&gt;
+	&lt;section class="section kf-started-inner"&gt;
+		&lt;div class="kf-parallax-bg js-parallax" style="background-image: url(images/about_inner_bg.jpg);"&gt;&lt;/div&gt;
+		&lt;div class="container"&gt;
+
+			...
+
+		&lt;/div&gt;
+	&lt;/section&gt;
+
+	&lt;!-- Section About-2 --&gt;
+	&lt;section class="section kf-choose kf-choose-2"&gt;
+		&lt;div class="container"&gt;
+
+			...
+
+		&lt;/div&gt;
+	&lt;/section&gt;
+
+	&lt;!-- Section Numbers-2 --&gt;
+	&lt;section class="section kf-numbers-2"&gt;
+		&lt;div class="container"&gt;
+
+			...
+
+		&lt;/div&gt;
+	&lt;/section&gt;
+
+	&lt;!-- Section Video --&gt;
+	&lt;section class="section kf-video"&gt;
+		&lt;div class="container"&gt;
+
+			...
+
+		&lt;/div&gt;
+	&lt;/section&gt;
+
+	&lt;!-- Section Services-2 --&gt;
+	&lt;section class="section kf-services"&gt;
+		&lt;div class="container"&gt;
+
+			...
+
+		&lt;/div&gt;
+	&lt;/section&gt;
+
+	&lt;!-- Section Team --&gt;
+	&lt;section class="section kf-team"&gt;
+		&lt;div class="container"&gt;
+
+			...
+
+		&lt;/div&gt;
+	&lt;/section&gt;
+
+	&lt;!-- Section Brands --&gt;
+	&lt;section class="section kf-brands"&gt;
+		&lt;div class="container"&gt;
+
+			...
+
+		&lt;/div&gt;
+	&lt;/section&gt;
+
+	&lt;!-- Section Testimonials Slider --&gt;
+	&lt;section class="section kf-testimonials kf-parallax" style="background-image: url(images/testimonials_bg2.jpg);"&gt;
+		&lt;div class="container"&gt;
+
+			...
+
+		&lt;/div&gt;
+	&lt;/section&gt;
+
+&lt;/div&gt;
+					</code>
+				</pre>
+			</article>
+			<article id="icons" class="dt-section">
+				<h2 class="dt-title">Icons</h2>
+				<p>
+					In this template are defined some of classes for icons, your can see all icons here - https://fontawesome.com/icons?d=gallery&s=brands,solid&m=free
+				</p>
+			</article>
+			<article id="credits" class="dt-section">
+				<h2 class="dt-title">Sourse & Credits</h2>
+				<h3>Scripts</h3>
+				<ul class="dt-list dt-list_nested dt-info-block">
+					<li>
+						<span class="dt-label dt-label_bold">Animate.css</span> <a target="_blank" href="https://daneden.github.io/animate.css/">https://daneden.github.io/animate.css/</a>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">jQuery</span> <a target="_blank" href="https://jquery.com/">https://jquery.com/</a>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">Isotope</span> <a target="_blank" href="https://isotope.metafizzy.co/">https://isotope.metafizzy.co/</a>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">imagesLoaded</span> <a target="_blank" href="http://imagesloaded.desandro.com/">http://imagesloaded.desandro.com/</a>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">jQuery Validation Plugin</span> <a target="_blank" href="http://jqueryvalidation.org/">http://jqueryvalidation.org/</a>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">Magnific Popup</span> <a target="_blank" href="http://dimsemenov.com/plugins/magnific-popup/">http://dimsemenov.com/plugins/magnific-popup/</a>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">Swiper</span> <a target="_blank" href="https://swiperjs.com/">https://swiperjs.com/</a>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">Bootstrap</span> <a target="_blank" href="https://getbootstrap.com/">https://getbootstrap.com/</a>
+					</li>
+                    <li>
+						<span class="dt-label dt-label_bold">Scrolla.js</span> <a target="_blank" href="https://github.com/maximzhurkin/jquery-scrolla">https://github.com/maximzhurkin/jquery-scrolla</a>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">skrollr.js</span> <a target="_blank" href="https://prinzhorn.github.io/skrollr/">https://prinzhorn.github.io/skrollr/</a>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">splitting.js</span> <a target="_blank" href="https://splitting.js.org/">https://splitting.js.org/</a>
+					</li>
+				</ul>
+				<h3>Fonts</h3>
+				<ul class="dt-list dt-list_nested dt-info-block">
+					<li>
+						<span class="dt-label dt-label_bold">Roboto</span>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">Oswald</span>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">Merienda</span>
+					</li>
+          <li>
+						<span class="dt-label dt-label_bold">FontAwesome - </span> <a target="_blank" href="https://fontawesome.com/icons?d=gallery&s=brands,solid&m=free">https://fontawesome.com/icons?d=gallery&s=brands,solid&m=free</a>
+					</li>
+				</ul>
+				<h3>Images</h3>
+				<p>Any Images or logos used in previews are not included in this item or final purchase.</p>
+				<ul class="dt-list dt-list_nested dt-info-block">
+					<li>
+						<span class="dt-label dt-label_bold">Pexels</span>
+					</li>
+				</ul>
+			</article>
+		</div>
+	</div>
+<script src="assets/rainbow-custom.min.js"></script>
+</body>
+</html>
