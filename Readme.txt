@@ -1,4 +1,4 @@
-Thank you for your recent purchase of "Kaffen - Cafe & Restaurant HTML5 Template".
+Thank you for your recent purchase of "DROP - Cafe & Restaurant HTML5 Template".
 
 Author URL: https://themeforest.net/user/bslthemes
 Author Email: beshleyua@gmail.com
@@ -7,12 +7,12 @@ Author Email: beshleyua@gmail.com
 
 Overview:
 
-Kaffen - Restaurant HTML Template is best suited for Restaurants, Cafes, Pub, Bars, Coffee House, Cafeteria
+DROP - Restaurant HTML Template is best suited for Restaurants, Cafes, Pub, Bars, Coffee House, Cafeteria
 and any food business who need attractive and effective way to promote your food related services.
 Includes: Unique Pre-built Pages, Menu Listing & Tabs, Reservation and Contacts forms with PHP,
 Beautiful Animated Sliders, Parallax, Awesome Blog Pages, Chefs, Testimonials, Lightbox Gallery with Filters
 and others. You do not need to be a professional at web development to successfully launch a modern Cafe or
-Restaurant website with Kaffen.
+Restaurant website with DROP.
 
 --------------------------------------
 
