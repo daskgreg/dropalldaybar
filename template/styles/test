@@ -1,0 +1,12 @@
+@import "../scss/helpers/variables";
+@import "../scss/helpers/mixins";
+@import "../scss/base/base";
+@import "../scss/layout/header";
+@import "../scss/layout/footer";
+@import "../scss/pages/layout";
+@import "../styles/swiper.css";
+@import "../styles/animate.css";
+@import "../styles/bootstrap.css";
+@import "../styles/magnific-popup.css";
+@import "../styles/splitting.css";
+@import "../../styles.scss";
