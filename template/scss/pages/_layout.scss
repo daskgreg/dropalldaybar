@@ -548,7 +548,7 @@
 	}
 	.price {
 		position: relative;
-		padding-left: 150px;
+		
 		font-size: 24px;
 		font-family: $base_font3_family;
 		color: $base_link_color;
@@ -558,7 +558,6 @@
 			left: 0;
 			top: 50%;
 			width: 130px;
-			border: 1px dashed $base_link_color;
 		}
 	}
 }
@@ -1742,7 +1741,6 @@
 			left: 0;
 			top: 50%;
 			width: 100%;
-			border: 1px dashed $base_link_color;
 		}
 		span {
 			padding-left: 15px;

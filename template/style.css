@@ -2355,7 +2355,6 @@ button.mfp-close:before, button.mfp-arrow:before {
 
 .kf-menu-item .price {
   position: relative;
-  padding-left: 150px;
   font-size: 24px;
   font-family: "Merienda";
   color: #b99272;
@@ -2367,7 +2366,6 @@ button.mfp-close:before, button.mfp-arrow:before {
   left: 0;
   top: 50%;
   width: 130px;
-  border: 1px dashed #b99272;
 }
 
 @media screen and (max-width: 992px) {
@@ -3637,7 +3635,6 @@ button.mfp-close:before, button.mfp-arrow:before {
   left: 0;
   top: 50%;
   width: 100%;
-  border: 1px dashed #b99272;
 }
 
 .kf-menu-item-2 .price span {

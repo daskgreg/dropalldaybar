@@ -2,8 +2,6 @@
 function selectLanguage(){
     var eng = document.getElementById("englishLanguage");
     var greek = document.getElementById("greekLanguage");
-
-    if()
 }
 
 function showGreekMenu(){
